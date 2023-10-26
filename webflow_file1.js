@@ -153,8 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function setTextAndStyles(value, clickedButton, clickedContainer) {
       textElement.textContent = value;
-      tekstElement.textContent = value;
-      tekstElement2.textContent = value;
+      // tekstElement.textContent = value;
+      // tekstElement2.textContent = value;
       conditionalDiv.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
       clickedContainer.style.border = '1px solid #00FF9F';
