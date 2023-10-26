@@ -99,28 +99,28 @@ document.addEventListener('DOMContentLoaded', function() {
     button9.addEventListener('click', function() {
         if (!button9Clicked) {
             setTextAndStyles3('9', button9, container9);
-            button6Clicked = true;
+            button9Clicked = true;
         } else {
             resetButton9();
-            button6Clicked = false;
+            button9Clicked = false;
         }
     });
     button10.addEventListener('click', function() {
         if (!button10Clicked) {
             setTextAndStyles3('10', button10, container10);
-            button8Clicked = true;
+            button10Clicked = true;
         } else {
             resetButton10();
-            button8Clicked = false;
+            button10Clicked = false;
         }
     });
     button11.addEventListener('click', function() {
         if (!button11Clicked) {
             setTextAndStyles3('11', button11, container11);
-            button8Clicked = true;
+            button11Clicked = true;
         } else {
             resetButton11();
-            button8Clicked = false;
+            button11Clicked = false;
         }
     });
     resetIcon.addEventListener('click', function() {
@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function() {
     button12.addEventListener('click', function() {
         if (!button12Clicked) {
             setTextAndStyles3('12', button12, container12);
-            button8Clicked = true;
+            button11Clicked = true;
         } else {
             resetButton12();
-            button8Clicked = false;
+            button11Clicked = false;
         }
     });
     function setTextAndStyles(value, clickedButton, clickedContainer) {
