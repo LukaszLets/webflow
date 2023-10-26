@@ -127,20 +127,21 @@ document.addEventListener('DOMContentLoaded', function() {
             button11Clicked = false;
         }
     });
+    button12.addEventListener('click', function() {
+        if (!button12Clicked) {
+            setTextAndStyles3('12', button12, container12);
+            button12Clicked = true;
+        } else {
+            resetButton12();
+            button12Clicked = false;
+        }
+    });
     resetIcon.addEventListener('click', function() {
         resetAllStyles();
         resetAllStylesForButtons4and5();
         resetAllStylesForButtons678();
     });
-    button12.addEventListener('click', function() {
-        if (!button12Clicked) {
-            setTextAndStyles3('12', button12, container12);
-            button11Clicked = true;
-        } else {
-            resetButton12();
-            button11Clicked = false;
-        }
-    });
+ 
     function setTextAndStyles(value, clickedButton, clickedContainer) {
         textElement.textContent = value;
         tekstElement.textContent = value;
