@@ -55,21 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
   var button11Clicked = false;
   var button12Clicked = false;
   
- button1.addEventListener('click', function() {
-    setTextAndStyles('Pipedrive', button1, container1);
-    addValueToText2AndAdditionalDiv2('Pipedrive');
-});
-
-button2.addEventListener('click', function() {
-    setTextAndStyles('Hubspot', button2, container2);
-    addValueToText2AndAdditionalDiv2('Hubspot');
-});
-
-button3.addEventListener('click', function() {
-    setTextAndStyles('Livespace', button3, container3);
-    addValueToText2AndAdditionalDiv2('Livespace');
-});
-
+  button1.addEventListener('click', function() {
+      setTextAndStyles('Pipedrive', button1, container1);
+  });
+  button2.addEventListener('click', function() {
+      setTextAndStyles('Hubspot', button2, container2);
+  });
+  button3.addEventListener('click', function() {
+      setTextAndStyles('Livespace', button3, container3);
+  });
   button4.addEventListener('click', function() {
       if (!button4Clicked) {
           setTextAndStyles2('4', button4, container4);
@@ -157,14 +151,6 @@ button3.addEventListener('click', function() {
       resetAllStylesForButtons678();
   });
 
-  function addValueToText2AndAdditionalDiv2(value) {
-    if (tekstElement2.textContent !== '') {
-        tekstElement2.textContent += ' / ';
-    }
-    tekstElement2.textContent += value;
-    additionalDiv2.textContent += value; // assuming you want the same behavior for additionalDiv2
-}
-  
   function setTextAndStyles(value, clickedButton, clickedContainer) {
       textElement.textContent = value;
       tekstElement.textContent = value;
@@ -363,3 +349,4 @@ button3.addEventListener('click', function() {
   resetAllStylesForButtons4and5();
   resetAllStylesForButtons678();
 });
+
