@@ -166,8 +166,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
   function setTextAndStyles2(value, clickedButton, clickedContainer) {
-      textElement2.textContent = value;
-      tekstElement2.textContent = value;
       if (textElement2.textContent !== '' && value !== '') {
           textElement2.textContent += ' / ';
       }
@@ -176,13 +174,12 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (value === '5') {
           textElement2.textContent += 'E-mail';
       }
+      tekstElement2.textContent = textElement2.textContent;
       conditionalDiv2.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
       clickedContainer.style.border = '1px solid #00FF9F';
   }
   function setTextAndStyles3(value, clickedButton, clickedContainer) {
-      textElement3.textContent = value;
-      tekstElement3.textContent = value;
       if (textElement3.textContent !== '' && value !== '') {
           textElement3.textContent += ' / ';
       }
@@ -193,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (value === '8') {
           textElement3.textContent += 'Slack';
       }
+      tekstElement3.textContent = textElement3.textContent;
       conditionalDiv3.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
       clickedContainer.style.border = '1px solid #00FF9F';
