@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var button6Clicked = false;
     var button7Clicked = false;
     var button8Clicked = false;
+    var button9Clicked = false;
+    var button10Clicked = false;
+    var button11Clicked = false;
+    var button12Clicked = false;
     button1.addEventListener('click', function() {
         setTextAndStyles('Pipedrive', button1, container1);
     });
