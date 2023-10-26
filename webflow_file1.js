@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     button9.addEventListener('click', function() {
         if (!button9Clicked) {
-            setTextAndStyles3('9', button9, container9);
+            setTextAndStyles4('9', button9, container9);
             button9Clicked = true;
         } else {
             resetButton9();
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     button10.addEventListener('click', function() {
         if (!button10Clicked) {
-            setTextAndStyles3('10', button10, container10);
+            setTextAndStyles4('10', button10, container10);
             button10Clicked = true;
         } else {
             resetButton10();
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     button11.addEventListener('click', function() {
         if (!button11Clicked) {
-            setTextAndStyles3('11', button11, container11);
+            setTextAndStyles4('11', button11, container11);
             button11Clicked = true;
         } else {
             resetButton11();
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     button12.addEventListener('click', function() {
         if (!button12Clicked) {
-            setTextAndStyles3('12', button12, container12);
+            setTextAndStyles4('12', button12, container12);
             button12Clicked = true;
         } else {
             resetButton12();
@@ -193,6 +193,24 @@ document.addEventListener('DOMContentLoaded', function() {
         clickedButton.style.backgroundColor = '#00FF9F';
         clickedContainer.style.border = '1px solid #00FF9F';
     }
+    function setTextAndStyles4(value, clickedButton, clickedContainer) {
+        if (textElement3.textContent !== '' && value !== '') {
+            textElement3.textContent += ' / ';
+        }
+        if (value === '9') {
+            textElement3.textContent += 'SMS';
+        } else if (value === '10') {
+            textElement3.textContent += 'E-mail';
+        } else if (value === '11') {
+            textElement3.textContent += 'Slack';
+         } else if (value === '12') {
+            textElement3.textContent += 'Slac2k';
+        }
+        conditionalDiv4.style.display = 'block';
+        clickedButton.style.backgroundColor = '#00FF9F';
+        clickedContainer.style.border = '1px solid #00FF9F';
+    }
+    
     function resetButton4() {
         button4.style.backgroundColor = '#1E2024';
         button4.style.color = '#FFFFFF';
