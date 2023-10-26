@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var button6 = document.getElementById('saveButton6');
     var button7 = document.getElementById('saveButton7');
     var button8 = document.getElementById('saveButton8');
+    var button9 = document.getElementById('saveButton9');
+    var button10 = document.getElementById('saveButton10');
+    var button11 = document.getElementById('saveButton11');
+    var button12 = document.getElementById('saveButton12');
+
     var container1 = document.getElementById('container1');
     var container2 = document.getElementById('container2');
     var container3 = document.getElementById('container3');
@@ -16,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var container6 = document.getElementById('container6');
     var container7 = document.getElementById('container7');
     var container8 = document.getElementById('container8');
+    var container9 = document.getElementById('container9');
+    var container10 = document.getElementById('container10');
+    var container11 = document.getElementById('container11');
+    var container12 = document.getElementById('container12');
+
     var textElement = document.getElementById('displayText');
     var conditionalDiv = document.getElementById('conditionalDiv');
     var textElement2 = document.getElementById('displayText2');
@@ -86,10 +96,46 @@ document.addEventListener('DOMContentLoaded', function() {
             button8Clicked = false;
         }
     });
+    button9.addEventListener('click', function() {
+        if (!button9Clicked) {
+            setTextAndStyles3('9', button9, container9);
+            button6Clicked = true;
+        } else {
+            resetButton9();
+            button6Clicked = false;
+        }
+    });
+    button10.addEventListener('click', function() {
+        if (!button10Clicked) {
+            setTextAndStyles3('10', button10, container10);
+            button8Clicked = true;
+        } else {
+            resetButton10();
+            button8Clicked = false;
+        }
+    });
+    button11.addEventListener('click', function() {
+        if (!button11Clicked) {
+            setTextAndStyles3('11', button11, container11);
+            button8Clicked = true;
+        } else {
+            resetButton11();
+            button8Clicked = false;
+        }
+    });
     resetIcon.addEventListener('click', function() {
         resetAllStyles();
         resetAllStylesForButtons4and5();
         resetAllStylesForButtons678();
+    });
+    button12.addEventListener('click', function() {
+        if (!button12Clicked) {
+            setTextAndStyles3('12', button12, container12);
+            button8Clicked = true;
+        } else {
+            resetButton12();
+            button8Clicked = false;
+        }
     });
     function setTextAndStyles(value, clickedButton, clickedContainer) {
         textElement.textContent = value;
@@ -184,6 +230,47 @@ document.addEventListener('DOMContentLoaded', function() {
             conditionalDiv3.style.display = 'none';
         }
     }
+    function resetButton9() {
+        button9.style.backgroundColor = '#1E2024';
+        button9.style.color = '#FFFFFF';
+        container9.style.border = '1px solid transparent';
+        var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
+        textElement3.textContent = values.join(' / ');
+        if (!textElement3.textContent) {
+            conditionalDiv3.style.display = 'none';
+        }
+    }
+    function resetButton10() {
+        button10.style.backgroundColor = '#1E2024';
+        button10.style.color = '#FFFFFF';
+        container10.style.border = '1px solid transparent';
+        var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
+        textElement3.textContent = values.join(' / ');
+        if (!textElement3.textContent) {
+            conditionalDiv3.style.display = 'none';
+        }
+    }
+    function resetButton11() {
+        button11.style.backgroundColor = '#1E2024';
+        button11.style.color = '#FFFFFF';
+        container11.style.border = '1px solid transparent';
+        var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
+        textElement3.textContent = values.join(' / ');
+        if (!textElement3.textContent) {
+            conditionalDiv3.style.display = 'none';
+        }
+    }
+    function resetButton12() {
+        button12.style.backgroundColor = '#1E2024';
+        button12.style.color = '#FFFFFF';
+        container12.style.border = '1px solid transparent';
+        var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
+        textElement3.textContent = values.join(' / ');
+        if (!textElement3.textContent) {
+            conditionalDiv3.style.display = 'none';
+        }
+    }
+
     function resetAllStyles() {
         let buttons = [button1, button2, button3];
         let containers = [container1, container2, container3];
