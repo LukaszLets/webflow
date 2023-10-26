@@ -32,11 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var conditionalDiv2 = document.getElementById('conditionalDiv2');
     var textElement3 = document.getElementById('displayText3');
     var conditionalDiv3 = document.getElementById('conditionalDiv3');
+    
     var resetIcon = document.getElementById('resetIcon');
+    
     var additionalDiv = document.getElementById('additionalDiv');
+    var additionalDiv2 = document.getElementById('additionalDiv2');
+    var additionalDiv3 = document.getElementById('additionalDiv3');
+    var additionalDiv4 = document.getElementById('additionalDiv4');
+    
     var tekstElement = document.getElementById('tekst');
     var tekstElement2 = document.getElementById('tekst2');
     var tekstElement3 = document.getElementById('tekst3');
+    var tekstElement4 = document.getElementById('tekst4');
+    
     var button4Clicked = false;
     var button5Clicked = false;
     var button6Clicked = false;
@@ -46,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var button10Clicked = false;
     var button11Clicked = false;
     var button12Clicked = false;
+    
     button1.addEventListener('click', function() {
         setTextAndStyles('Pipedrive', button1, container1);
     });
