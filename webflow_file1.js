@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (value === '5') {
           textElement2.textContent += 'E-mail';
       }
-      tekstElement2.textContent = textElement2.textContent;
+      // tekstElement2.textContent = textElement2.textContent;
       conditionalDiv2.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
       clickedContainer.style.border = '1px solid #00FF9F';
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (value === '8') {
           textElement3.textContent += 'Slack';
       }
-      tekstElement3.textContent = textElement3.textContent;
+      // tekstElement3.textContent = textElement3.textContent;
       conditionalDiv3.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
       clickedContainer.style.border = '1px solid #00FF9F';
