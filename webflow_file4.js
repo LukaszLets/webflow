@@ -220,6 +220,8 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container4.style.border = '1px solid transparent';
       var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'SMS');
       textElement2.textContent = values.join(' / ');
+      tekstElement.textContent = values.join(' / ');
+      tekstElement2.textContent = values.join(' / ');
       if (!textElement2.textContent) {
           conditionalDiv2.style.display = 'none';
       }
@@ -230,6 +232,8 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container5.style.border = '1px solid transparent';
       var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'E-mail');
       textElement2.textContent = values.join(' / ');
+      tekstElement.textContent = values.join(' / ');
+      tekstElement2.textContent = values.join(' / ');
       if (!textElement2.textContent) {
           conditionalDiv2.style.display = 'none';
       }
@@ -241,6 +245,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       // Clear the entire content of textElement2 and add remaining values
       var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'SMS');
       textElement3.textContent = values.join(' / ');
+      tekstElement4.textContent = values.join(' / ');
       if (!textElement3.textContent) {
           conditionalDiv3.style.display = 'none';
       }
@@ -251,6 +256,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container7.style.border = '1px solid transparent';
       var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'E-mail');
       textElement3.textContent = values.join(' / ');
+      tekstElement4.textContent = values.join(' / ');
       if (!textElement3.textContent) {
           conditionalDiv3.style.display = 'none';
       }
@@ -261,6 +267,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container8.style.border = '1px solid transparent';
       var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
       textElement3.textContent = values.join(' / ');
+      tekstElement4.textContent = values.join(' / ');
       if (!textElement3.textContent) {
           conditionalDiv3.style.display = 'none';
       }
