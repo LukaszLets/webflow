@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   dalejBtn1.style.pointerEvents = 'none';
   dalejBtn2.style.pointerEvents = 'none';
   dalejBtn3.style.pointerEvents = 'none';
+  dalejBtn1.style.color = 'white';
   dalejBtn1.innerHTML = 'Zaznacz przynajmniej jedną opcję';
   dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
   dalejBtn3.innerHTML = 'Zaznacz przynajmniej jedną opcję';
