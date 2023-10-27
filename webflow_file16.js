@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var dalejBtn2 = document.getElementById('dalej2');
   var dalejBtn3 = document.getElementById('dalej3');
   dalejBtn1.style.pointerEvents = 'none';
-  dalejBtn2.style.pointerEvents = 'none !important';
+  $dalejBtn2.prop('disabled', true);
   dalejBtn1.style.color = 'white';
   dalejBtn2.style.color = 'white';
   dalejBtn1.innerHTML = 'Zaznacz przynajmniej jedną opcję';
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = textElement2.textContent;
     dalejValue2 = textElement2.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'auto !important';
+      $dalejBtn2.prop('disabled', false);
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = textElement3.textContent;
     dalejValue3 = textElement3.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'auto !important';
+      $dalejBtn2.prop('disabled', false);
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = values.join(' / ');
     dalejValue2 = values.join(' / ');
     if (dalejValue2 === '' || dalejValue3 === '') {
-        dalejBtn2.style.pointerEvents = 'none !important';
+        $dalejBtn2.prop('disabled', true);
         dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
         dalejBtn2.style.color = 'white';
         dalejBtn2.style.background = 'none';
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = values.join(' / ');
     dalejValue2 = values.join(' / ');
     if (dalejValue2 === '' || dalejValue3 === '') {
-        dalejBtn2.style.pointerEvents = 'none !important';
+        $dalejBtn2.prop('disabled', true);
         dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
         dalejBtn2.style.color = 'white';
         dalejBtn2.style.background = 'none';
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = values.join(' / ');
     dalejValue3 = values.join(' / ');
     if (dalejValue2 === '' || dalejValue3 === '') {
-        dalejBtn2.style.pointerEvents = 'none !important';
+        $dalejBtn2.prop('disabled', true);
         dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
         dalejBtn2.style.color = 'white';
         dalejBtn2.style.background = 'none';
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = values.join(' / ');
     dalejValue3 = values.join(' / ');
     if (dalejValue2 === '' || dalejValue3 === '') {
-        dalejBtn2.style.pointerEvents = 'none !important';
+        $dalejBtn2.prop('disabled', true);
         dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
         dalejBtn2.style.color = 'white';
         dalejBtn2.style.background = 'none';
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = values.join(' / ');
     dalejValue3 = values.join(' / ');
     if (dalejValue2 === '' || dalejValue3 === '') {
-        dalejBtn2.style.pointerEvents = 'none !important';
+        $dalejBtn2.prop('disabled', true);
         dalejBtn2.innerHTML = 'Zaznacz przynajmniej jedną opcję';
         dalejBtn2.style.color = 'white';
         dalejBtn2.style.background = 'none';
