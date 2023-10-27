@@ -175,6 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (dalejValue1 !== null) {
       dalejBtn1.style.pointerEvents = 'auto';
       dalejBtn1.innerHTML = 'Przechodzę dalej';
+      dalejBtn1.style.color = 'black';
+      dalejBtn1.style.background = '#00FF9F';
     }
     conditionalDiv.style.display = 'block';
     clickedButton.style.backgroundColor = '#00FF9F';
