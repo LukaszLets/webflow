@@ -177,9 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
       dalejBtn1.innerHTML = 'Przechodzę dalej';
       dalejBtn1.style.color = 'black';
       dalejBtn1.style.background = '#00FF9F';
+      dalejBtn1.style.border = "0px solid #0000FF";
     }
     conditionalDiv.style.display = 'block';
     clickedButton.style.backgroundColor = '#00FF9F';
+    clickedButton.style.color = 'black';
     clickedContainer.style.border = '1px solid #00FF9F';
     let allButtons = [button1, button2, button3];
     allButtons.forEach((btn) => {
