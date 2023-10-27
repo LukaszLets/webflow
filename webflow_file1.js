@@ -1,31 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-  var button1 = document.getElementById('saveButton');
-  var button2 = document.getElementById('saveButton2');
-  var button3 = document.getElementById('saveButton3');
-  var button4 = document.getElementById('saveButton4');
-  var button5 = document.getElementById('saveButton5');
-  var button6 = document.getElementById('saveButton6');
-  var button7 = document.getElementById('saveButton7');
-  var button8 = document.getElementById('saveButton8');
-  var button9 = document.getElementById('saveButton9');
-  var button10 = document.getElementById('saveButton10');
-  var button11 = document.getElementById('saveButton11');
-  var button12 = document.getElementById('saveButton12');
-
-  var container1 = document.getElementById('container1');
-  var container2 = document.getElementById('container2');
-  var container3 = document.getElementById('container3');
-  var container4 = document.getElementById('container4');
-  var container5 = document.getElementById('container5');
-  var container6 = document.getElementById('container6');
-  var container7 = document.getElementById('container7');
-  var container8 = document.getElementById('container8');
-  var container9 = document.getElementById('container9');
-  var container10 = document.getElementById('container10');
-  var container11 = document.getElementById('container11');
-  var container12 = document.getElementById('container12');
-
   var textElement = document.getElementById('displayText');
   var conditionalDiv = document.getElementById('conditionalDiv');
   var textElement2 = document.getElementById('displayText2');
@@ -106,53 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
           button8Clicked = true;
       } else {
           resetButton8();
-          button8Clicked = false;
-      }
-  });
-  button9.addEventListener('click', function() {
-      if (!button9Clicked) {
-          setTextAndStyles4('9', button9, container9);
-          button9Clicked = true;
-      } else {
-          resetButton9();
-          button9Clicked = false;
-      }
-  });
-  button10.addEventListener('click', function() {
-      if (!button10Clicked) {
-          setTextAndStyles4('10', button10, container10);
-          button10Clicked = true;
-      } else {
-          resetButton10();
-          button10Clicked = false;
-      }
-  });
-  button11.addEventListener('click', function() {
-      if (!button11Clicked) {
+          button8Clicked = false;      if (!button11Clicked) {
           setTextAndStyles4('11', button11, container11);
-          button11Clicked = true;
-      } else {
-          resetButton11();
-          button11Clicked = false;
-      }
-  });
-  button12.addEventListener('click', function() {
-      if (!button12Clicked) {
-          setTextAndStyles4('12', button12, container12);
-          button12Clicked = true;
-      } else {
-          resetButton12();
-          button12Clicked = false;
-      }
-  });
-  resetIcon.addEventListener('click', function() {
-      resetAllStyles();
-      resetAllStylesForButtons4and5();
-      resetAllStylesForButtons678();
-  });
-function setTextAndStyles(value, clickedButton, clickedContainer) {
-      textElement.textContent = value;
-      // tekstElement.textContent = value;
+
       // tekstElement2.textContent = value;
       conditionalDiv.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
@@ -162,86 +91,14 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
           if (btn !== clickedButton) {
               btn.style.backgroundColor = '#1E2024';
               btn.style.color = '#ACB0B9';
-          }
-      });
-  }
-  
-  function setTextAndStyles2(value, clickedButton, clickedContainer) {
-      if (textElement2.textContent !== '' && value !== '') {
-          textElement2.textContent += ' / ';
-      }
-      if (value === '4') {
-          textElement2.textContent += 'SMS';
+          }     textElement2.textContent += 'SMS';
       } else if (value === '5') {
           textElement2.textContent += 'E-mail';
       }
       // tekstElement2.textContent = textElement2.textContent;
       conditionalDiv2.style.display = 'block';
       clickedButton.style.backgroundColor = '#00FF9F';
-      clickedContainer.style.border = '1px solid #00FF9F';
-  }
-  function setTextAndStyles3(value, clickedButton, clickedContainer) {
-      if (textElement3.textContent !== '' && value !== '') {
-          textElement3.textContent += ' / ';
-      }
-      if (value === '6') {
-          textElement3.textContent += 'SMS';
-      } else if (value === '7') {
-          textElement3.textContent += 'E-mail';
-      } else if (value === '8') {
-          textElement3.textContent += 'Slack';
-      }
-      // tekstElement3.textContent = textElement3.textContent;
-      conditionalDiv3.style.display = 'block';
-      clickedButton.style.backgroundColor = '#00FF9F';
-      clickedContainer.style.border = '1px solid #00FF9F';
-  }
-  function setTextAndStyles4(value, clickedButton, clickedContainer) {
-      if (textElement3.textContent !== '' && value !== '') {
-          textElement3.textContent += ' / ';
-      }
-      if (value === '9') {
-          textElement3.textContent += 'SMS';
-      } else if (value === '10') {
-          textElement3.textContent += 'E-mail';
-      } else if (value === '11') {
-          textElement3.textContent += 'Slack';
-       } else if (value === '12') {
-          textElement3.textContent += 'Slac2k';
-      }
-      conditionalDiv4.style.display = 'block';
-      clickedButton.style.backgroundColor = '#00FF9F';
-      clickedContainer.style.border = '1px solid #00FF9F';
-  }
-  
-  function resetButton4() {
-      button4.style.backgroundColor = '#1E2024';
-      button4.style.color = '#FFFFFF';
-      container4.style.border = '1px solid transparent';
-      var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'SMS');
-      textElement2.textContent = values.join(' / ');
-      if (!textElement2.textContent) {
-          conditionalDiv2.style.display = 'none';
-      }
-  }
-  function resetButton5() {
-      button5.style.backgroundColor = '#1E2024';
-      button5.style.color = '#FFFFFF';
-      container5.style.border = '1px solid transparent';
-      var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'E-mail');
-      textElement2.textContent = values.join(' / ');
-      if (!textElement2.textContent) {
-          conditionalDiv2.style.display = 'none';
-      }
-  }
-  function resetButton6() {
-      button6.style.backgroundColor = '#1E2024';
-      button6.style.color = '#FFFFFF';
-      container6.style.border = '1px solid transparent';
-      // Clear the entire content of textElement2 and add remaining values
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'SMS');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
+      c
           conditionalDiv3.style.display = 'none';
       }
   }
@@ -253,52 +110,6 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       textElement3.textContent = values.join(' / ');
       if (!textElement3.textContent) {
           conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton8() {
-      button8.style.backgroundColor = '#1E2024';
-      button8.style.color = '#FFFFFF';
-      container8.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton9() {
-      button9.style.backgroundColor = '#1E2024';
-      button9.style.color = '#FFFFFF';
-      container9.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton10() {
-      button10.style.backgroundColor = '#1E2024';
-      button10.style.color = '#FFFFFF';
-      container10.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton11() {
-      button11.style.backgroundColor = '#1E2024';
-      button11.style.color = '#FFFFFF';
-      container11.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton12() {
-      button12.style.backgroundColor = '#1E2024';
-      button12.style.color = '#FFFFFF';
-      container12.style.border = '1px solid transparent';
       var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
       textElement3.textContent = values.join(' / ');
       if (!textElement3.textContent) {
