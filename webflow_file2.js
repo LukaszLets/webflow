@@ -17,39 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var container2 = document.getElementById('container2');
   var container3 = document.getElementById('container3');
   var container4 = document.getElementById('container4');
-  var container5 = document.getElementById('container5');
-  var container6 = document.getElementById('container6');
-  var container7 = document.getElementById('container7');
-  var container8 = document.getElementById('container8');
-  var container9 = document.getElementById('container9');
-  var container10 = document.getElementById('container10');
-  var container11 = document.getElementById('container11');
-  var container12 = document.getElementById('container12');
-
-  var textElement = document.getElementById('displayText');
-  var conditionalDiv = document.getElementById('conditionalDiv');
-  var textElement2 = document.getElementById('displayText2');
-  var conditionalDiv2 = document.getElementById('conditionalDiv2');
-  var textElement3 = document.getElementById('displayText3');
-  var conditionalDiv3 = document.getElementById('conditionalDiv3');
-  
-  var resetIcon = document.getElementById('resetIcon');
-  
-  var additionalDiv = document.getElementById('additionalDiv');
-  var additionalDiv2 = document.getElementById('additionalDiv2');
-  var additionalDiv3 = document.getElementById('additionalDiv3');
-  var additionalDiv4 = document.getElementById('additionalDiv4');
-  
-  var tekstElement = document.getElementById('tekst');
-  var tekstElement2 = document.getElementById('tekst2');
-  var tekstElement3 = document.getElementById('tekst3');
-  var tekstElement4 = document.getElementById('tekst4');
-  
-  var button4Clicked = false;
-  var button5Clicked = false;
-  var button6Clicked = false;
-  var button7Clicked = false;
-  var button8Clicked = false;
+  var container5 = document.getElementById('container5');d = false;
   var button9Clicked = false;
   var button10Clicked = false;
   var button11Clicked = false;
@@ -99,29 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
           resetButton7();
           button7Clicked = false;
       }
-  });
-  button8.addEventListener('click', function() {
-      if (!button8Clicked) {
-          setTextAndStyles3('8', button8, container8);
-          button8Clicked = true;
-      } else {
-          resetButton8();
-          button8Clicked = false;
-      }
-  });
-  button9.addEventListener('click', function() {
-      if (!button9Clicked) {
-          setTextAndStyles4('9', button9, container9);
-          button9Clicked = true;
-      } else {
-          resetButton9();
-          button9Clicked = false;
-      }
-  });
-  button10.addEventListener('click', function() {
-      if (!button10Clicked) {
-          setTextAndStyles4('10', button10, container10);
-          button10Clicked = true;
+
       } else {
           resetButton10();
           button10Clicked = false;
@@ -164,26 +110,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
               btn.style.color = '#ACB0B9';
           }
       });
-  }
-  
-  function setTextAndStyles2(value, clickedButton, clickedContainer) {
-      if (textElement2.textContent !== '' && value !== '') {
-          textElement2.textContent += ' / ';
-      }
-      if (value === '4') {
-          textElement2.textContent += 'SMS';
-      } else if (value === '5') {
-          textElement2.textContent += 'E-mail';
-      }
-      // tekstElement2.textContent = textElement2.textContent;
-      conditionalDiv2.style.display = 'block';
-      clickedButton.style.backgroundColor = '#00FF9F';
-      clickedContainer.style.border = '1px solid #00FF9F';
-  }
-  function setTextAndStyles3(value, clickedButton, clickedContainer) {
-      if (textElement3.textContent !== '' && value !== '') {
-          textElement3.textContent += ' / ';
-      }
+  } }
       if (value === '6') {
           textElement3.textContent += 'SMS';
       } else if (value === '7') {
@@ -218,31 +145,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       button4.style.backgroundColor = '#1E2024';
       button4.style.color = '#FFFFFF';
       container4.style.border = '1px solid transparent';
-      var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'SMS');
-      textElement2.textContent = values.join(' / ');
-      if (!textElement2.textContent) {
-          conditionalDiv2.style.display = 'none';
-      }
-  }
-  function resetButton5() {
-      button5.style.backgroundColor = '#1E2024';
-      button5.style.color = '#FFFFFF';
-      container5.style.border = '1px solid transparent';
-      var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'E-mail');
-      textElement2.textContent = values.join(' / ');
-      if (!textElement2.textContent) {
-          conditionalDiv2.style.display = 'none';
-      }
-  }
-  function resetButton6() {
-      button6.style.backgroundColor = '#1E2024';
-      button6.style.color = '#FFFFFF';
-      container6.style.border = '1px solid transparent';
-      // Clear the entire content of textElement2 and add remaining values
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'SMS');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
+      var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'SMS');          conditionalDiv3.style.display = 'none';
       }
   }
   function resetButton7() {
@@ -274,28 +177,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       if (!textElement3.textContent) {
           conditionalDiv3.style.display = 'none';
       }
-  }
-  function resetButton10() {
-      button10.style.backgroundColor = '#1E2024';
-      button10.style.color = '#FFFFFF';
-      container10.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton11() {
-      button11.style.backgroundColor = '#1E2024';
-      button11.style.color = '#FFFFFF';
-      container11.style.border = '1px solid transparent';
-      var values = textElement3.textContent.split('/').filter(v => v.trim() !== 'Slack');
-      textElement3.textContent = values.join(' / ');
-      if (!textElement3.textContent) {
-          conditionalDiv3.style.display = 'none';
-      }
-  }
-  function resetButton12() {
+  }12() {
       button12.style.backgroundColor = '#1E2024';
       button12.style.color = '#FFFFFF';
       container12.style.border = '1px solid transparent';
