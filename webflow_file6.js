@@ -1,4 +1,4 @@
-
+ 
 document.addEventListener('DOMContentLoaded', function() {
   var button1 = document.getElementById('saveButton');
   var button2 = document.getElementById('saveButton2');
@@ -220,7 +220,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container4.style.border = '1px solid transparent';
       var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'SMS');
       textElement2.textContent = values.join(' / ');
-      tekstElement2.textContent = values.join(' / ');
+      tekstElement3.textContent = values.join(' / ');
       if (!textElement2.textContent) {
           conditionalDiv2.style.display = 'none';
       }
@@ -231,7 +231,7 @@ function setTextAndStyles(value, clickedButton, clickedContainer) {
       container5.style.border = '1px solid transparent';
       var values = textElement2.textContent.split('/').filter(v => v.trim() !== 'E-mail');
       textElement2.textContent = values.join(' / ');
-      tekstElement2.textContent = values.join(' / ');
+      tekstElement3.textContent = values.join(' / ');
       if (!textElement2.textContent) {
           conditionalDiv2.style.display = 'none';
       }
