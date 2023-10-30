@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  dalejBtn2.style.pointerEvents = 'none';
+
   function setTextAndStyles2(value, clickedButton, clickedContainer) {
     if (textElement2.textContent !== '' && value !== '') {
       textElement2.textContent += ' / ';
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = textElement2.textContent;
     dalejValue2 = textElement2.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'auto';
+      dalejBtn2.style.pointerEvents = 'all !important';
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = textElement3.textContent;
     dalejValue3 = textElement3.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'all';
+      dalejBtn2.style.pointerEvents = 'all !important';
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
