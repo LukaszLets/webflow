@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     conditionalDiv.style.display = 'block';
     clickedButton.style.backgroundColor = '#00FF9F';
-    document.querySelector();
     clickedContainer.style.border = '1px solid #00FF9F';
     let allButtons = [button1, button2, button3];
     allButtons.forEach((btn) => {
