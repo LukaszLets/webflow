@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = textElement2.textContent;
     dalejValue2 = textElement2.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'auto !important';
+      dalejBtn2.style.pointerEvents = 'all';
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement4.textContent = textElement3.textContent;
     dalejValue3 = textElement3.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'auto !important';
+      dalejBtn2.style.pointerEvents = 'all';
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
