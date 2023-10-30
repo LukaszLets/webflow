@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var dalejValue1 = '';
   var dalejValue2 = '';
   var dalejValue3 = '';
-  var dalejBtn1 = document.getElementById('dalej1');
-  var dalejBtn2 = document.getElementById('dalej2');
-  var dalejBtn3 = document.getElementById('dalej3');
+  const dalejBtn1 = document.getElementById('dalej1');
+  const dalejBtn2 = document.getElementById('dalej2');
+  const dalejBtn3 = document.getElementById('dalej3');
   dalejBtn1.style.pointerEvents = 'none';
-  dalejBtn2.style.pointerEvents = 'none !important';
+  dalejBtn2.style.pointerEvents = 'none';
   dalejBtn1.style.color = 'white';
   dalejBtn2.style.color = 'white';
   dalejBtn1.innerHTML = 'Zaznacz przynajmniej jedną opcję';
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tekstElement3.textContent = textElement2.textContent;
     dalejValue2 = textElement2.textContent;
     if (dalejValue2 !== '' && dalejValue3 !== '') {
-      dalejBtn2.style.pointerEvents = 'all';
+      dalejBtn2.style.pointerEvents = 'auto';
       dalejBtn2.innerHTML = 'Przechodzę dalej';
       dalejBtn2.style.color = 'black';
       dalejBtn2.style.background = '#00FF9F';
