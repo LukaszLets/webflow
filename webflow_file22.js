@@ -15,11 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var dalejValue1 = '';
   var dalejValue2 = '';
   var dalejValue3 = '';
-  const dalejBtn1 = document.getElementById('dalej1');
-  const dalejBtn2 = document.getElementById('dalej2');
-  const dalejBtn3 = document.getElementById('dalej3');
+  var dalejBtn1 = document.getElementById('dalej1');
+  var dalejBtn2 = document.getElementById('dalej2');
+  var dalejBtn3 = document.getElementById('dalej3');
   dalejBtn1.style.pointerEvents = 'none';
-  dalejBtn2.style.pointerEvents = 'none';
   dalejBtn1.style.color = 'white';
   dalejBtn2.style.color = 'white';
   dalejBtn1.innerHTML = 'Zaznacz przynajmniej jedną opcję';
@@ -190,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-
+  dalejBtn2.style.pointerEvents = 'none';
   function setTextAndStyles2(value, clickedButton, clickedContainer) {
     if (textElement2.textContent !== '' && value !== '') {
       textElement2.textContent += ' / ';
