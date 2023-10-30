@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var dalejBtn2 = document.getElementById('dalej2');
   var dalejBtn3 = document.getElementById('dalej3');
   dalejBtn1.style.pointerEvents = 'none';
+  dalejBtn2.style.setProperty('pointer-events', 'none', 'important');
   dalejBtn1.style.color = 'white';
   dalejBtn2.style.color = 'white';
   dalejBtn1.innerHTML = 'Zaznacz przynajmniej jedną opcję';
